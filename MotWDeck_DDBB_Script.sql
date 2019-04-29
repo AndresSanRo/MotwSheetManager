@@ -32,8 +32,8 @@ CREATE TABLE PLAYER(
 CREATE TABLE MOVES(
 	ID INTEGER AUTO_INCREMENT PRIMARY KEY,
     PLB_ID INTEGER,
-    MOVE_TYPE VARCHAR(25),
-    MOVE_NAME VARCHAR(25),
+    MOVE_TYPE VARCHAR(30),
+    MOVE_NAME TEXT,
     MOVE_DESCRIPTION TEXT,
     CONSTRAINT FK_MO_PLB FOREIGN KEY (PLB_ID) REFERENCES PLAYBOOKS (ID)
 		ON DELETE CASCADE ON UPDATE CASCADE
@@ -137,7 +137,7 @@ INSERT INTO MOVES VALUES
 (91,4,"HAVEN","Panic Room","This has essential supplies and is protected by normal and mystical means. You can hide out there for a few days, safe from pretty much anything"), 
 (92,4,"HAVEN","Magical Laboratory","You have a mystical lab with all kinds of weird ingredients and tools useful for casting spells (like the use magic move, big magic, and any other magical moves)"), 
 #Flake
-93,5,"MOVES","Connect the Dots","At the beginning of each mystery, if you look for the wider patterns that current events might be part of, roll +Sharp. On a 10+ hold 3, and on a 7-9 hold 1. Spend your hold during the mystery to ask the Keeper any one of the following questions: • Is this person connected to current events more than they are saying? • When and where will the next critical event occur? • What does the monster want from this person? • Is this connected to previous mysteries we have investigated? • How does"), 
+(93,5,"MOVES","Connect the Dots","At the beginning of each mystery, if you look for the wider patterns that current events might be part of, roll +Sharp. On a 10+ hold 3, and on a 7-9 hold 1. Spend your hold during the mystery to ask the Keeper any one of the following questions: • Is this person connected to current events more than they are saying? • When and where will the next critical event occur? • What does the monster want from this person? • Is this connected to previous mysteries we have investigated? • How does"), 
 (94,5,"MOVES","Crazy Eyes","You get +1 Weird (max +3)."), 
 (95,5,"MOVES","See, It All Fits Together","You can use Sharp instead of Charm when you manipulate someone"), 
 (96,5,"MOVES","Suspicious Mind","If someone lies to you, you know it."), 
@@ -220,7 +220,7 @@ INSERT INTO MOVES VALUES
 (169,9,"MOVES","Leave No One Behind","In combat, when you help someone escape, roll +Sharp. On a 10+ you get them out clean. On a 7-9, you can either get them out or suffer no harm, you choose. On a miss, you fail to get them out and you’ve attracted hostile attention"), 
 (170,9,"MOVES","Tactical Genius","When you read a bad situation, you may roll +Cool instead of +Sharp"), 
 (171,9,"MOVES","Medic","You have a full first aid kit, and the training to heal people. When you do first aid, roll +Cool. On a 10+ the patient is stabilized and healed of 2 harm. On a 7-9 choose one: heal 2 harm or stabilize the injury. On a miss, you cause an extra 1 harm. This move takes the place of regular first aid"), 
-(172,9,"MOVES","Mobility",""You have a truck, van, or car built for monster hunting. Choose two good things and one bad thing about it. Good things: roomy; surveillance gear; fast; stealthy; intimidating; classic; medical kit; sleeping space; toolkit; concealed weapons; anonymous; armoured (+1 armour inside); tough; monster cage. Bad things: loud; obvious; temperamental; beaten-up; gas-guzzler; uncomfortable; slow; old.""), 
+(172,9,"MOVES","Mobility","You have a truck, van, or car built for monster hunting. Choose two good things and one bad thing about it. Good things: roomy; surveillance gear; fast; stealthy; intimidating; classic; medical kit; sleeping space; toolkit; concealed weapons; anonymous; armoured (+1 armour inside); tough; monster cage. Bad things: loud; obvious; temperamental; beaten-up; gas-guzzler; uncomfortable; slow; old."), 
 (173,9,"MOVES","Agency","When you deal with the Agency, requesting help or gear, or making excuses for a failure, roll +Sharp. On a 10+, you’re good—your request for gear or personnel is okayed, or your slip-up goes unnoticed. On a 7-9, things aren’t so great. You might get chewed out by your superiors and there’ll be fallout, but you get what you need for the job. On a miss, you screwed up: you might be suspended or under investigation, or just in the doghouse. You certainly aren’t going to get any help until you sort it all out."), 
 (174,9,"RESOURCES","Well-armed",""), 
 (175,9,"RESOURCES","Well-financed",""), 
