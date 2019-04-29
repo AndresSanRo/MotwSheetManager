@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--JQuery-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!--Materialize-->
+    <script src="js/materialize.min.js"></script>
+    <link href="css/materialize.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />    
+</head>
+<body>
+    <main>
+        <div class="row">
+            <div class="col s12 m4 offset-m4">
+                <h1 style="font-family:MOTW; text-align:center">MOTW DECK</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m4 offset-m4 card">
+                <div class="card-content">
+                    <div class="input-field" style="font-family:MOTW">
+                        <input type="text" id="name" class="" />
+                        <label>Nick</label>
+                    </div>
+                    <div class="input-field" style="font-family:MOTW">
+                        <input type="password" id="pwd" class="" />
+                        <label>Password</label>
+                    </div>
+                    <div class="row input-field">
+                        <div class="col s4">
+                            <a class="btn grey waves-effect waves-dark" id="login">Entrar</a>
+                        </div>
+                        <div class="col s4 offset-s4">
+                            <a class="btn grey waves-effect waves-dark" id="register">Registrar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018-2019 Project by AndresSanRo & Davos95
+                <a class="grey-text text-lighten-4 right" href="#!">Git Hub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="modalRegister" class="modal">
+        <div class="modal-content">
+            <h4 style="font-family:'MOTW'; text-align:center">Register</h4>
+            <div class="row">
+                <div class="input-field col s12 m5 offset-m1" style="font-family:MOTW">
+                    <input type="text" id="nameR" />
+                    <label>Nick</label>
+                </div>
+                <div class="input-field col s12 m5" style="font-family:MOTW">
+                    <input type="email" id="nameR" />
+                    <label>email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m5 offset-m1" style="font-family:MOTW">
+                    <input type="password" id="nameR" />
+                    <label>Password</label>
+                </div>
+                <div class="input-field col s12 m5" style="font-family:MOTW">
+                    <input type="password" id="nameR" />
+                    <label>Repeat Password</label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="btn grey darken-1 waves-effect waves-dark modal-close">Confirm</a>
+            <a href="#!" class="btn red darken-1 waves-effect waves-dark modal-close">Cancel</a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.modal').modal();
+            $("#register").click(function () {
+                $('#modalRegister').modal('open');
+            });
+        });
+    </script>
+</body>
+</html>
