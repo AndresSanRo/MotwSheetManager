@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using MySql.Data.MySqlClient;
 using MotWDeckAPI.Data;
 using Microsoft.EntityFrameworkCore;
+using MotWDeckAPI.Repositories;
 
 namespace MotWDeckAPI
 {
@@ -24,6 +25,7 @@ namespace MotWDeckAPI
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IRepositoryMotWDeck, RepositoryMotWDeck>();
             services.AddDbContext<IContextMotWDeck, ContextMotWDeck>(options => options.UseMySql(Configuration.GetConnectionString("LocalMotWDeckConnection")));
             services.AddMvc();
         }

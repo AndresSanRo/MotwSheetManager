@@ -9,3 +9,6 @@ D:\MotwSheetManager\MotWDeck\MotWDeckAPI\obj\Debug\netcoreapp2.1\MotWDeckAPI.Raz
 D:\MotwSheetManager\MotWDeck\MotWDeckAPI\obj\Debug\netcoreapp2.1\MotWDeckAPI.AssemblyInfoInputs.cache
 D:\MotwSheetManager\MotWDeck\MotWDeckAPI\obj\Debug\netcoreapp2.1\MotWDeckAPI.AssemblyInfo.cs
 D:\MotwSheetManager\MotWDeck\MotWDeckAPI\obj\Debug\netcoreapp2.1\MotWDeckAPI.RazorTargetAssemblyInfo.cache
+D:\MotwSheetManager\MotWDeck\MotWDeckAPI\bin\Debug\netcoreapp2.1\MotWDeckAPI.pdb
+D:\MotwSheetManager\MotWDeck\MotWDeckAPI\obj\Debug\netcoreapp2.1\MotWDeckAPI.dll
+D:\MotwSheetManager\MotWDeck\MotWDeckAPI\obj\Debug\netcoreapp2.1\MotWDeckAPI.pdb
